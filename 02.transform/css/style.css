@@ -1,0 +1,28 @@
+.wrapper{
+	border: 2px solid #000;
+	height: 600px;
+	position: relative;
+}
+.box{
+	width: 200px;
+	height: 100px;
+	background-color: red;
+
+	/* 變形屬性-針對元素本身變形 */
+	/* translate(線性移動、一個距離)、scale(縮放、一個倍率)、rotate(旋轉、一個角度)、skew(傾斜、一個角度) */
+
+	/*transform: translate(100px,100px);*/
+	/*transform: translateX(100px);*/
+	/*transform: translateX(100px) translateY(100px);*/
+	/*transform: rotate(45deg);*/
+	/*transform: skew(45deg);*/
+	/*transform: scale(0.5);*/
+
+	/* transform 搭配 position 置中方式 <- 超實用*/
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	    -ms-transform: translate(-50%,-50%);
+	        transform: translate(-50%,-50%);
+}
